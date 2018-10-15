@@ -10,7 +10,7 @@ source:
   sha256: 65364d6eb1da26fd7aba61770c4deef4a7d6f1220799c362750a3f1ac89c8f89
 
 build:
-  number: 0
+  number: 1000
   # NOTE: Linux is temporarily skipped because it'll need GCC 7
   # (It will be added after a feedstock is created)
   skip: True  # [py2k or not win]

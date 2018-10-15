@@ -11,9 +11,7 @@ source:
 
 build:
   number: 1000
-  # NOTE: Linux is temporarily skipped because it'll need GCC 7
-  # (It will be added after a feedstock is created)
-  skip: True  # [py2k or not win]
+  skip: True  # [py2k]
 
 requirements:
   build:

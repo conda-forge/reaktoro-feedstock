@@ -1,7 +1,7 @@
 About reaktoro
 ==============
 
-Home: http://github.com/reaktoro/Reaktoro
+Home: http://github.com/reaktoro/reaktoro
 
 Package license: LGPL-2.1
 

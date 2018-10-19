@@ -1,4 +1,4 @@
-About reaktoro
+About Reaktoro
 ==============
 
 Home: http://github.com/reaktoro/reaktoro
@@ -31,7 +31,7 @@ Current release info
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-reaktoro-green.svg)](https://anaconda.org/conda-forge/reaktoro) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/reaktoro.svg)](https://anaconda.org/conda-forge/reaktoro) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/reaktoro.svg)](https://anaconda.org/conda-forge/reaktoro) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/reaktoro.svg)](https://anaconda.org/conda-forge/reaktoro) |
 
-Installing reaktoro
+Installing Reaktoro
 ===================
 
 Installing `reaktoro` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:

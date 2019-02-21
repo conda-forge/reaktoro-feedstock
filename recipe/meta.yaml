@@ -19,14 +19,15 @@ requirements:
     - cmake>=3.13
     - ninja
   host:
-    - boost=1.67
+    - boost
     - invoke
     - numpy 1.14.*
     - pybind11
     - python
     - tabulate
+    - pugixml
   run:
-    - boost=1.67
+    - boost
     - python
     - {{ pin_compatible('numpy') }}
 test:

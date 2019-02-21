@@ -1,5 +1,5 @@
 # Work in progress: using a commit hash from GitHub, as there's no tagged release yet
-{% set version = "0.1.0" %}
+{% set version = "1.0.0" %}
 
 package:
   name: reaktoro
@@ -10,7 +10,7 @@ source:
   sha256: 65364d6eb1da26fd7aba61770c4deef4a7d6f1220799c362750a3f1ac89c8f89
 
 build:
-  number: 1000
+  number: 0
   skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
 
 requirements:

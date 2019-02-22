@@ -25,7 +25,6 @@ requirements:
     - pybind11
     - python
     - tabulate
-    - pugixml
   run:
     - boost
     - python

@@ -1,4 +1,8 @@
-About Reaktoro
+<!--
+# -*- mode: jinja -*-
+-->
+
+About reaktoro
 ==============
 
 Home: http://github.com/reaktoro/reaktoro
@@ -7,14 +11,13 @@ Package license: LGPL-2.1
 
 Feedstock license: BSD 3-Clause
 
-Summary: Unified framework for modeling chemically reactive systems
+Summary: A unified framework for modeling chemically reactive systems
 
 Reaktoro is a unified framework for modeling chemically reactive systems.
 It provides methods for chemical equilibrium and kinetic calculations
 for multiphase systems. Reaktoro is mainly developed in C++ for
 performance reasons. A Python interface is available for a more
-convenient and simpler use. Currently, Reaktoro can interface with two
-widely used geochemical software, PHREEQC and GEMS.
+convenient and simpler use.
 
 
 Current build status
@@ -31,7 +34,7 @@ Current release info
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-reaktoro-green.svg)](https://anaconda.org/conda-forge/reaktoro) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/reaktoro.svg)](https://anaconda.org/conda-forge/reaktoro) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/reaktoro.svg)](https://anaconda.org/conda-forge/reaktoro) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/reaktoro.svg)](https://anaconda.org/conda-forge/reaktoro) |
 
-Installing Reaktoro
+Installing reaktoro
 ===================
 
 Installing `reaktoro` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
@@ -55,6 +58,8 @@ conda search reaktoro --channel conda-forge
 
 About conda-forge
 =================
+
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -110,3 +115,11 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@allanleal](https://github.com/allanleal/)
+* [@nicoddemus](https://github.com/nicoddemus/)
+* [@tadeu](https://github.com/tadeu/)
+

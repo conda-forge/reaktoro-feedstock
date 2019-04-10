@@ -1,5 +1,5 @@
 # Work in progress: using a commit hash from GitHub, as there's no tagged release yet
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 
 package:
   name: reaktoro
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
-  sha256: 4643b08545f52c540e50e97e4ebaa40c576a90a2c8a194493fb6a40dd81a2bcd
+  sha256: 0292d9951fc35807fda1215f91ba281f316e5da0dcb4f6ec5cd80466b78246c2
 
 build:
   number: 0

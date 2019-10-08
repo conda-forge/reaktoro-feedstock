@@ -18,12 +18,12 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake >=3.13
     - ninja
+    - python
   host:
     - boost
     - invoke
     - numpy 1.14.*
     - pybind11
-    - python
     - tabulate
   run:
     - boost

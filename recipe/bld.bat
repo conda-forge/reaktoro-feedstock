@@ -15,5 +15,6 @@ cmake -G Ninja ^
       -DCMAKE_INCLUDE_PATH:PATH="%LIBRARY_INC%" ^
       -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON ^
       -DBOOST_INCLUDE_DIR:PATH="%LIBRARY_INC%" ^
+      -DPython3_FIND_STRATEGY=LOCATION ^
       ..
 ninja install

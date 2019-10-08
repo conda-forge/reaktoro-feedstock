@@ -11,12 +11,12 @@ source:
 
 build:
   number: 0
-  skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
+  skip: True  # [py2k or c_compiler == 'toolchain_c']
 
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - cmake>=3.13
+    - cmake >=3.13
     - ninja
   host:
     - boost

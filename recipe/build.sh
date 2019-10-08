@@ -10,6 +10,7 @@ cmake -DREAKTORO_BUILD_ALL=ON \
       -DCMAKE_INCLUDE_PATH=$PREFIX/include \
       -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON \
       -DBOOST_INCLUDE_DIR=$PREFIX/include \
+      -DPython3_FIND_STRATEGY=LOCATION \
       ..
 make VERBOSE=1 -j${CPU_COUNT}
 make install

@@ -6,8 +6,10 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
-  sha256: 509c63df96e03abd2a124bdff7389d719443dc735a2399ce8682aacc1e32cb6c
+  url: https://github.com/reaktoro/reaktoro/archive/master.zip
+  sha256: db16fcf5b8ef5d2e0f6d61343e37e43a965f0af0ef80ef8e2fce11b684e9dfd1
+#  url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
+#  sha256: 509c63df96e03abd2a124bdff7389d719443dc735a2399ce8682aacc1e32cb6c
 
 build:
   number: 0

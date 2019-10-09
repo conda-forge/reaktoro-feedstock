@@ -18,7 +18,7 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - cmake 3.14.*
+    - cmake
     - ninja
   host:
     - python

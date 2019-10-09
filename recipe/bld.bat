@@ -3,8 +3,10 @@ cd build
 
 REM This is a fix for a CMake bug where it crashes because of the "/GL" flag
 REM See: https://gitlab.kitware.com/cmake/cmake/issues/16282
-set CXXFLAGS=%CXXFLAGS:-GL=%
-set CFLAGS=%CFLAGS:-GL=%
+if defined CXXFLAGS set CXXFLAGS=%CXXFLAGS:-GL=%
+if defined CFLAGS set %CFLAGS:-GL=%
+@echo CXXFLAGS: %CXXFLAGS%
+@echo CFLAGS: %CFLAGS%
 
 REM This is a fix for a problem in Azure+CMake where CMake is finding a
 REM different compiler (GCC, etc.) instead of MSVC

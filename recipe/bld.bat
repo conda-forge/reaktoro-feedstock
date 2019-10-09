@@ -6,6 +6,15 @@ REM See: https://gitlab.kitware.com/cmake/cmake/issues/16282
 set CXXFLAGS=%CXXFLAGS:-GL=%
 set CFLAGS=%CFLAGS:-GL=%
 
+REM This is a fix for a problem in Azure+CMake where CMake is finding a
+REM different compiler (GCC, etc.) instead of MSVC
+REM See: https://github.com/conda-forge/conda-forge.github.io/issues/714
+@echo.
+@echo CC: "%CC%" -^> "cl.exe"
+set CC=cl.exe
+@echo CXX: "%CXX%" -^> "cl.exe"
+set CXX=cl.exe
+
 cmake -G Ninja ^
       -DREAKTORO_BUILD_ALL:BOOL=ON ^
       -DREAKTORO_PYTHON_INSTALL_PREFIX:PATH="%PREFIX%" ^

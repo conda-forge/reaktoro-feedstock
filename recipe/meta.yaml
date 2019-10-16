@@ -6,8 +6,10 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/allanleal/reaktoro/archive/fix-mac-build-pybind11-issue.zip
-  sha256: f6855f13992de89142efc4828d80eb27318ad0859764b8a4d5c848a33a3cfded
+  url: https://github.com/allanleal/reaktoro/tarball/fix-mac-build-pybind11-issue
+  sha256: 758bd00d02eb5fc108728b1771493f9b6a43f4ceb32032f9f89bac8f1a5bb522
+#   url: https://github.com/allanleal/reaktoro/archive/fix-mac-build-pybind11-issue.zip
+#   sha256: f6855f13992de89142efc4828d80eb27318ad0859764b8a4d5c848a33a3cfded
 #  url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
 #  sha256: 509c63df96e03abd2a124bdff7389d719443dc735a2399ce8682aacc1e32cb6c
 

@@ -1,29 +1,33 @@
 # Work in progress: using a commit hash from GitHub, as there's no tagged release yet
-{% set version = "1.0.4" %}
+{% set version = "1.0.6" %}
 
 package:
   name: reaktoro
   version: {{ version }}
 
 source:
-  url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
-  sha256: 93be81f12b5f972211f591a500a5190c7fc21afab6d48ef525645d6251c557f7
+  url: https://github.com/allanleal/reaktoro/archive/fix-mac-build-pybind11-issue.tar.gz
+  sha256: 7aa0c01a7b874d4f7d262f498cb0b15cfab12a230a1c7c88f68516a985948784
+#   url: https://github.com/allanleal/reaktoro/archive/fix-mac-build-pybind11-issue.zip
+#   sha256: f6855f13992de89142efc4828d80eb27318ad0859764b8a4d5c848a33a3cfded
+#  url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
+#  sha256: 509c63df96e03abd2a124bdff7389d719443dc735a2399ce8682aacc1e32cb6c
 
 build:
   number: 0
-  skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
+  skip: True  # [py2k or c_compiler == 'toolchain_c']
 
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - cmake>=3.13
+    - cmake
     - ninja
   host:
+    - python
     - boost
     - invoke
     - numpy 1.14.*
     - pybind11
-    - python
     - tabulate
   run:
     - boost

@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/allanleal/reaktoro/archive/fix-mac-build-pybind11-issue.tar.gz
-  sha256: 7aa0c01a7b874d4f7d262f498cb0b15cfab12a230a1c7c88f68516a985948784
-#   url: https://github.com/allanleal/reaktoro/archive/fix-mac-build-pybind11-issue.zip
-#   sha256: f6855f13992de89142efc4828d80eb27318ad0859764b8a4d5c848a33a3cfded
-#  url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
-#  sha256: 509c63df96e03abd2a124bdff7389d719443dc735a2399ce8682aacc1e32cb6c
+ url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
+ sha256: 509c63df96e03abd2a124bdff7389d719443dc735a2399ce8682aacc1e32cb6c
+
+#  Use the config below to use an archive from a branch to test conda-forge builds without creating GitHub releases
+#   url: https://github.com/allanleal/reaktoro/archive/{branch-name-here}.tar.gz
+#   sha256: 7aa0c01a7b874d4f7d262f498cb0b15cfab12a230a1c7c88f68516a985948784
 
 build:
   number: 0

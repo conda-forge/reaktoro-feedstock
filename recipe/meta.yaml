@@ -1,5 +1,4 @@
-# Work in progress: using a commit hash from GitHub, as there's no tagged release yet
-{% set version = "1.0.6" %}
+{% set version = "1.0.7" %}
 
 package:
   name: reaktoro
@@ -7,7 +6,7 @@ package:
 
 source:
  url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
- sha256: 509c63df96e03abd2a124bdff7389d719443dc735a2399ce8682aacc1e32cb6c
+ sha256: d159aa3517f15bd7a7bb7ff65039ab8601586f169c944444b145562f939989ce
 
 #  Use the config below to use an archive from a branch to test conda-forge builds without creating GitHub releases
 #   url: https://github.com/allanleal/reaktoro/archive/{branch-name-here}.tar.gz

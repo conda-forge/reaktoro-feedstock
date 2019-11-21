@@ -9,7 +9,7 @@ source:
  sha256: 26fa548776b7271cce90916ff586567e43d401b3ebc2d9c0cc0a6db1ea305198
 
 #  Use the config below to use an archive from a branch to test conda-forge builds without creating GitHub releases
-#   url: https://github.com/allanleal/reaktoro/archive/{branch-name-here}.tar.gz
+#   url: https://github.com/allanleal/reaktoro/archive/{branch-name-here}.tar.gz 
 #   sha256: 7aa0c01a7b874d4f7d262f498cb0b15cfab12a230a1c7c88f68516a985948784
 
 build:

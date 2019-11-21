@@ -1,4 +1,4 @@
-{% set version = "1.0.7" %}
+{% set version = "1.1.0" %}
 
 package:
   name: reaktoro
@@ -6,14 +6,14 @@ package:
 
 source:
  url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
- sha256: d159aa3517f15bd7a7bb7ff65039ab8601586f169c944444b145562f939989ce
+ sha256: 26fa548776b7271cce90916ff586567e43d401b3ebc2d9c0cc0a6db1ea305198
 
 #  Use the config below to use an archive from a branch to test conda-forge builds without creating GitHub releases
-#   url: https://github.com/allanleal/reaktoro/archive/{branch-name-here}.tar.gz
+#   url: https://github.com/allanleal/reaktoro/archive/{branch-name-here}.tar.gz 
 #   sha256: 7aa0c01a7b874d4f7d262f498cb0b15cfab12a230a1c7c88f68516a985948784
 
 build:
-  number: 2
+  number: 0
   skip: True  # [py2k or c_compiler == 'toolchain_c']
 
 requirements:
@@ -24,6 +24,7 @@ requirements:
   host:
     - python
     - boost
+    - thermofun
     - invoke
     - numpy
     - pybind11
@@ -31,6 +32,7 @@ requirements:
   run:
     - boost
     - python
+    - thermofun
     - {{ pin_compatible('numpy') }}
   run_constrained:  # [osx]
     - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx]

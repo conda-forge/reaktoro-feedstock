@@ -24,7 +24,7 @@ requirements:
   host:
     - python
     - boost
-    - thermofun
+    - thermofun 0.3.3
     - invoke
     - numpy
     - pybind11
@@ -32,7 +32,8 @@ requirements:
   run:
     - boost
     - python
-    - thermofun
+    - pandas
+    - thermofun 0.3.3
     - {{ pin_compatible('numpy') }}
   run_constrained:   # [osx]
     - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx]

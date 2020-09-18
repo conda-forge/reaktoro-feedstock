@@ -25,6 +25,7 @@ requirements:
     - python
     - boost
     - thermofun 0.3.3
+    - nlohmann_json 3.6.1
     - invoke
     - numpy
     - pybind11

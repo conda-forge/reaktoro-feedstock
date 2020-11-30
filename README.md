@@ -5,9 +5,13 @@ Home: http://github.com/reaktoro/reaktoro
 
 Package license: LGPL-2.1
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/reaktoro-feedstock/blob/master/LICENSE.txt)
 
 Summary: A unified framework for modeling chemically reactive systems
+
+Development: https://github.com/reaktoro/reaktoro
+
+Documentation: https://reaktoro.org
 
 Reaktoro is a unified framework for modeling chemically reactive systems.
 It provides methods for chemical equilibrium and kinetic calculations
@@ -118,45 +122,45 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_boost1.72.0python3.6.____cpython</td>
+              <td>win_64_boost1.72.0python3.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1836&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/reaktoro-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.72.0python3.6.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/reaktoro-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.72.0python3.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_boost1.72.0python3.7.____cpython</td>
+              <td>win_64_boost1.72.0python3.7</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1836&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/reaktoro-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.72.0python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/reaktoro-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.72.0python3.7" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_boost1.72.0python3.8.____cpython</td>
+              <td>win_64_boost1.72.0python3.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1836&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/reaktoro-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.72.0python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/reaktoro-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.72.0python3.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_boost1.74.0python3.6.____cpython</td>
+              <td>win_64_boost1.74.0python3.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1836&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/reaktoro-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.74.0python3.6.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/reaktoro-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.74.0python3.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_boost1.74.0python3.7.____cpython</td>
+              <td>win_64_boost1.74.0python3.7</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1836&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/reaktoro-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.74.0python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/reaktoro-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.74.0python3.7" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_boost1.74.0python3.8.____cpython</td>
+              <td>win_64_boost1.74.0python3.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1836&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/reaktoro-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.74.0python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/reaktoro-feedstock?branchName=master&jobName=win&configuration=win_64_boost1.74.0python3.8" alt="variant">
                 </a>
               </td>
             </tr>

@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.2.2" %}
 
 package:
   name: reaktoro
@@ -6,14 +6,14 @@ package:
 
 source:
   url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
-  sha256: 693a89a28d825ca56bccd8182e922a816d1ee1186cf41aa826aaa696d20bd341
+  sha256: 869beba23eade9104500ed7a556565da9fb2f5f02b651d10242ddc2507f82b57
 
 #  Use the config below to use an archive from a branch to test conda-forge builds without creating GitHub releases
 #   url: https://github.com/allanleal/reaktoro/archive/{branch-name-here}.tar.gz 
 #   sha256: 7aa0c01a7b874d4f7d262f498cb0b15cfab12a230a1c7c88f68516a985948784
 
 build:
-  number: 3
+  number: 0
   skip: true  # [py2k or c_compiler == 'toolchain_c']
 
 requirements:

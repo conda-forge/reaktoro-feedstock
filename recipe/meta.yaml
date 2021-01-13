@@ -5,12 +5,14 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
-  sha256: 10cd8ada2005cdf69ea9ed2edca705303f553161088075f18d03e31baf2226af
+#  url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
+#  sha256: 10cd8ada2005cdf69ea9ed2edca705303f553161088075f18d03e31baf2226af
 
 #  Use the config below to use an archive from a branch to test conda-forge builds without creating GitHub releases
 #   url: https://github.com/allanleal/reaktoro/archive/{branch-name-here}.tar.gz 
 #   sha256: 7aa0c01a7b874d4f7d262f498cb0b15cfab12a230a1c7c88f68516a985948784
+  url: https://github.com/allanleal/reaktoro/archive/fix-condaaware-chemquantity.tar.gz 
+  sha256: 7aa0c01a7b874d4f7d262f498cb0b15cfab12a230a1c7c88f68516a985948784
 
 build:
   number: 0
@@ -28,7 +30,7 @@ requirements:
     - nlohmann_json 3.6.1
     - invoke
     - numpy
-    - pybind11 2.5.0
+    - pybind11
     - tabulate
   run:
     - boost

@@ -13,7 +13,7 @@ source:
 #   sha256: 7aa0c01a7b874d4f7d262f498cb0b15cfab12a230a1c7c88f68516a985948784
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py2k or c_compiler == 'toolchain_c']
 
 requirements:
@@ -24,7 +24,7 @@ requirements:
   host:
     - python
     - boost
-    - thermofun 0.3.6
+    - thermofun 0.3.7
     - nlohmann_json 3.6.1
     - invoke
     - numpy

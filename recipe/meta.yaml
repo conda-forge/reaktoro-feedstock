@@ -28,6 +28,7 @@ requirements:
     - nlohmann_json 3.6.1
     - invoke
     - numpy
+    - setuptools
     - pybind11
     - tabulate
   run:

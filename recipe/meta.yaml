@@ -29,6 +29,7 @@ requirements:
     - invoke
     - numpy
     - setuptools
+    - wheel
     - pybind11
     - tabulate
   run:

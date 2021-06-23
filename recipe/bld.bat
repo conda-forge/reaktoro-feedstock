@@ -1,8 +1,3 @@
-cmake -P deps/install
-
-mkdir build
-cd build
-
 REM This is a fix for a CMake bug where it crashes because of the "/GL" flag
 REM See: https://gitlab.kitware.com/cmake/cmake/issues/16282
 if defined CXXFLAGS set CXXFLAGS=%CXXFLAGS:-GL=%
@@ -19,13 +14,35 @@ set CC=cl.exe
 @echo CXX: "%CXX%" -^> "cl.exe"
 set CXX=cl.exe
 
-cmake -G Ninja ^
-      -DREAKTORO_BUILD_PYTHON=ON ^
-      -DREAKTORO_DEPS_EXTRA_BUILD_ARGS="-DCMAKE_VERBOSE_MAKEFILE=ON" ^
-      -DCMAKE_BUILD_TYPE=Release ^
-      -DCMAKE_INSTALL_PREFIX:PATH="%LIBRARY_PREFIX%" ^
-      -DCMAKE_INCLUDE_PATH:PATH="%LIBRARY_INC%" ^
-      -DCMAKE_VERBOSE_MAKEFILE=ON ^
-      -DPYTHON_EXECUTABLE=%PYTHON% ^
-      ..
-ninja install
+@REM cmake -G Ninja ^
+@REM       -DREAKTORO_BUILD_PYTHON=ON ^
+@REM       -DREAKTORO_DEPS_EXTRA_BUILD_ARGS="-DCMAKE_VERBOSE_MAKEFILE=ON" ^
+@REM       -DCMAKE_BUILD_TYPE=Release ^
+@REM       -DCMAKE_INSTALL_PREFIX:PATH="%LIBRARY_PREFIX%" ^
+@REM       -DCMAKE_INCLUDE_PATH:PATH="%LIBRARY_INC%" ^
+@REM       -DCMAKE_VERBOSE_MAKEFILE=ON ^
+@REM       -DPYTHON_EXECUTABLE=%PYTHON% ^
+@REM       ..
+@REM ninja install
+
+@REM Configure the build of the dependencies in the deps directory
+cmake -G Ninja -S deps -B deps/build ^
+    -DCMAKE_BUILD_TYPE=Release ^
+    -DCMAKE_INSTALL_PREFIX=install ^
+    -DPYTHON_EXECUTABLE=%PYTHON%
+
+@REM Build the dependencies in the deps directory
+cmake --build deps/build --parallel
+
+@REM Configure the build of Reaktoro
+cmake -G Ninja -S . -B build ^
+    -DCMAKE_BUILD_TYPE=Release ^
+    -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
+    -DCMAKE_INCLUDE_PATH=%LIBRARY_INC% ^
+    -DCMAKE_INSTALL_LIBDIR=lib ^
+    -DCMAKE_VERBOSE_MAKEFILE=ON ^
+    -DPYTHON_EXECUTABLE=%PYTHON% ^
+    -DREAKTORO_BUILD_PYTHON=ON
+
+@REM Build and install Reaktoro and the dependencies above in %PREFIX%
+cmake --build build --target install --parallel

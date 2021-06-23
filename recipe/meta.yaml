@@ -10,7 +10,7 @@ source:
 
 #  Use the config below to use an archive from a branch to test conda-forge builds without creating GitHub releases
   # url: https://github.com/allanleal/reaktoro/archive/{branch-name-here}.tar.gz
-  url: https://github.com/allanleal/reaktoro/archive/reaktoro-2.0-preview.tar.gz
+  url: https://github.com/allanleal/reaktoro/archive/v2.0-preview.tar.gz
   sha256: 6f8eb83086f53d89f2144380728e1403fd6b45b903a673c6a086b3523170cf4a
 
 build:
@@ -47,7 +47,7 @@ test:
 
 about:
   home: https://github.com/reaktoro/reaktoro
-  license: LGPL-2.1
+  license: LGPL-2.1-only
   license_family: LGPL
   license_file: LICENSE
   summary: A unified framework for modeling chemically reactive systems

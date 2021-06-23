@@ -12,7 +12,8 @@ source:
   # url: https://github.com/allanleal/reaktoro/archive/{branch-name-here}.tar.gz
   # url: https://github.com/allanleal/reaktoro/archive/v2.0-preview.tar.gz
   # sha256: 6f8eb83086f53d89f2144380728e1403fd6b45b903a673c6a086b3523170cf4a
-  git_url: https://github.com/allanleal/reaktoro/v2.0-preview
+  git_url: https://github.com/allanleal/reaktoro.git
+  git_tag: v2.0-preview
   git_depth: 1
 
 build:

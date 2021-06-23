@@ -1,16 +1,17 @@
-{% set version = "1.2.3" %}
+{% set version = "2.0" %}
 
 package:
   name: reaktoro
   version: {{ version }}
 
 source:
-  url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
-  sha256: e682f2846d5de9fa6ee9565e54762653a1c3ecb46e7932a46e1d4881b8b64cc4
+  # url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
+  # sha256: e682f2846d5de9fa6ee9565e54762653a1c3ecb46e7932a46e1d4881b8b64cc4
 
 #  Use the config below to use an archive from a branch to test conda-forge builds without creating GitHub releases
-#   url: https://github.com/allanleal/reaktoro/archive/{branch-name-here}.tar.gz 
-#   sha256: 7aa0c01a7b874d4f7d262f498cb0b15cfab12a230a1c7c88f68516a985948784
+  # url: https://github.com/allanleal/reaktoro/archive/{branch-name-here}.tar.gz
+  url: https://github.com/allanleal/reaktoro/archive/reaktoro-2.0-preview.tar.gz
+  sha256: 6f8eb83086f53d89f2144380728e1403fd6b45b903a673c6a086b3523170cf4a
 
 build:
   number: 0
@@ -23,7 +24,6 @@ requirements:
     - ninja
   host:
     - python
-    - boost
     - thermofun 0.3.7
     - nlohmann_json 3.6.1
     - invoke
@@ -34,7 +34,6 @@ requirements:
     - pybind11
     - tabulate
   run:
-    - boost
     - python
     - pandas
     - thermofun 0.3.6
@@ -47,7 +46,7 @@ test:
     - reaktoro
 
 about:
-  home: http://github.com/reaktoro/reaktoro
+  home: https://github.com/reaktoro/reaktoro
   license: LGPL-2.1
   license_family: LGPL
   license_file: LICENSE

@@ -1,2 +1,6 @@
+python:
+  - 3.9
+vc:
+  - 14.2
 MACOSX_DEPLOYMENT_TARGET:  # [osx]
   - '10.13'                # [osx]

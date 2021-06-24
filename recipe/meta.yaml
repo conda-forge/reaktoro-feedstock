@@ -17,7 +17,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [py2k or c_compiler == 'toolchain_c']
+  skip: true  # [py2k or c_compiler == 'toolchain_c' or python < 3.9]
 
 requirements:
   build:

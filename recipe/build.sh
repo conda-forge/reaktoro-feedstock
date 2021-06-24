@@ -19,4 +19,4 @@ cmake -S . -B build \
     -DREAKTORO_BUILD_PYTHON=ON
 
 # Build and install Reaktoro and the dependencies above in $PREFIX
-cmake --build build --target install --parallel
+cmake --build build --target install --parallel $((CPU_COUNT - 1)) # avoid compilation error "virtual memory exhausted: Cannot allocate memory"

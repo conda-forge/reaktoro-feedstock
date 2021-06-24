@@ -17,7 +17,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [py2k or c_compiler == 'toolchain_c' or python < 3.9]
+  skip: true  # [py2k or c_compiler == 'toolchain_c' or py < 3.9]
 
 requirements:
   build:
@@ -27,6 +27,7 @@ requirements:
   host:
     - python
     - thermofun 0.3.7
+    - pugixml
     - nlohmann_json 3.6.1
     - invoke
     - numpy

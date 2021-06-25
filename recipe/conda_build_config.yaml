@@ -1,4 +1,6 @@
-vc:
-  - 14.2
+c_compiler:
+  - vs2019
+cxx_compiler:
+  - vs2019
 MACOSX_DEPLOYMENT_TARGET:  # [osx]
   - '10.13'                # [osx]

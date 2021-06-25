@@ -6,6 +6,8 @@
 # due to many parallel jobs consuming all available memory
 JOBS=$((CPU_COUNT - 1))
 
+echo "Using $JOBS parallel jobs out of $CPU_COUNT available to build Reaktoro and its dependencies."
+
 # Configure the build of the dependencies in the deps directory
 cmake -S deps -B deps/build \
     -DCMAKE_BUILD_TYPE=Release \

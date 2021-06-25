@@ -6,7 +6,7 @@ cmake -S deps -B deps/build ^
 
 @REM Build the dependencies in the deps directory
 @REM Note: No need for --parallel below, since cmake takes care of the /MP flag for MSVC
-cmake --build deps/build
+cmake --build deps/build --config Release
 
 @REM Configure the build of Reaktoro
 cmake -S . -B build ^
@@ -19,4 +19,4 @@ cmake -S . -B build ^
 
 @REM Build and install Reaktoro and the dependencies above in %LIBRARY_PREFIX%
 @REM Note: No need for --parallel below, since cmake takes care of the /MP flag for MSVC
-cmake --build build --target install
+cmake --build build --target install --config Release

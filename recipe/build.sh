@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Avoid errors on the server such as:
+#  - Error: virtual memory exhausted: Cannot allocate memory
+#  - Error: Exit code 137
+# due to many parallel jobs consuming all available memory
+JOBS=$((CPU_COUNT - 1))
+
 # Configure the build of the dependencies in the deps directory
 cmake -S deps -B deps/build \
     -DCMAKE_BUILD_TYPE=Release \
@@ -7,7 +13,7 @@ cmake -S deps -B deps/build \
     -DPYTHON_EXECUTABLE=$PYTHON
 
 # Build the dependencies in the deps directory
-cmake --build deps/build --parallel
+cmake --build deps/build --parallel $JOBS
 
 # Configure the build of Reaktoro
 cmake -S . -B build \
@@ -19,4 +25,4 @@ cmake -S . -B build \
     -DREAKTORO_BUILD_PYTHON=ON
 
 # Build and install Reaktoro and the dependencies above in $PREFIX
-cmake --build build --target install --parallel $((CPU_COUNT - 1)) # avoid compilation error "virtual memory exhausted: Cannot allocate memory"
+cmake --build build --target install --parallel $JOBS

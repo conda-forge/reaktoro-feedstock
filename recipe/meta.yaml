@@ -26,6 +26,8 @@ requirements:
     - cmake
     - ninja
     - catch2
+    - ccache # [unix]
+    - clcache # [win]
   host:
     - python
     - thermofun 0.3.7

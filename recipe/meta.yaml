@@ -25,6 +25,7 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
     - ninja
+    - catch2
   host:
     - python
     - thermofun 0.3.7

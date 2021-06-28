@@ -20,11 +20,12 @@ cmake --build deps/build --parallel $JOBS
 # Configure the build of Reaktoro
 cmake -S . -B build \
     -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_INSTALL_PREFIX="$PREFIX" \
+    -DCMAKE_INSTALL_PREFIX=$PREFIX \
     -DCMAKE_INSTALL_LIBDIR=lib \
     -DCMAKE_VERBOSE_MAKEFILE=ON \
     -DPYTHON_EXECUTABLE=$PYTHON \
-    -DREAKTORO_BUILD_PYTHON=ON
+    -DREAKTORO_BUILD_PYTHON=ON \
+    -DREAKTORO_PYTHON_INSTALL_PREFIX=$PREFIX
 
 # Build and install Reaktoro and the dependencies above in $PREFIX
 cmake --build build --target install --parallel $JOBS

@@ -15,7 +15,8 @@ cmake -S . -B build ^
     -DCMAKE_INCLUDE_PATH=%LIBRARY_INC% ^
     -DCMAKE_VERBOSE_MAKEFILE=ON ^
     -DPYTHON_EXECUTABLE=%PYTHON% ^
-    -DREAKTORO_BUILD_PYTHON=ON
+    -DREAKTORO_BUILD_PYTHON=ON ^
+    -DREAKTORO_PYTHON_INSTALL_PREFIX=%PREFIX%
 
 @REM Build and install Reaktoro and the dependencies above in %LIBRARY_PREFIX%
 @REM Note: No need for --parallel below, since cmake takes care of the /MP flag for MSVC

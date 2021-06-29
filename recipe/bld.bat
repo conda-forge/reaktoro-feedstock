@@ -15,9 +15,12 @@ cmake -S . -B build ^
     -DCMAKE_INCLUDE_PATH=%LIBRARY_INC% ^
     -DCMAKE_VERBOSE_MAKEFILE=ON ^
     -DPYTHON_EXECUTABLE=%PYTHON% ^
-    -DREAKTORO_BUILD_PYTHON=ON ^
-    -DREAKTORO_PYTHON_INSTALL_PREFIX=%PREFIX%
+    -DREAKTORO_BUILD_PYTHON=ON
 
 @REM Build and install Reaktoro and the dependencies above in %LIBRARY_PREFIX%
 @REM Note: No need for --parallel below, since cmake takes care of the /MP flag for MSVC
-cmake --build build --target install --config Release
+cmake --build build --config Release --target install
+
+@REM In Windows, conda-forge Python packages must be located in %PREFIX%\site-packages.
+@REM The above install command places them in %PREFIX%\Library\site-packages instead.
+mv %LIBRARY_PREFIX%\site-packages %PREFIX%\site-packages

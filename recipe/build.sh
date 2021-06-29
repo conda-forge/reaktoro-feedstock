@@ -24,8 +24,7 @@ cmake -S . -B build \
     -DCMAKE_INSTALL_LIBDIR=lib \
     -DCMAKE_VERBOSE_MAKEFILE=ON \
     -DPYTHON_EXECUTABLE=$PYTHON \
-    -DREAKTORO_BUILD_PYTHON=ON \
-    -DREAKTORO_PYTHON_INSTALL_PREFIX=$PREFIX
+    -DREAKTORO_BUILD_PYTHON=ON
 
 # Build and install Reaktoro and the dependencies above in $PREFIX
 cmake --build build --target install --parallel $JOBS

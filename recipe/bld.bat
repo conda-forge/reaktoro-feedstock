@@ -23,4 +23,5 @@ cmake --build build --config Release --target install
 
 @REM In Windows, conda-forge Python packages must be located in %PREFIX%\site-packages.
 @REM The above install command places them in %PREFIX%\Library\site-packages instead.
-mv %LIBRARY_PREFIX%\site-packages %PREFIX%\site-packages
+cmake -E copy_directory %LIBRARY_PREFIX%\site-packages %PREFIX%\site-packages
+cmake -E remove_directory %LIBRARY_PREFIX%\site-packages

@@ -31,18 +31,21 @@ requirements:
   host:
     - python
     - numpy
-    - pip
     - pandas
+    - pytest
+    - pybind11
+    - pybind11-stubgen
+    - pip
     - setuptools
     - wheel
-    - tabulate
-    - pybind11
     - pugixml
     - thermofun 0.3.7
     - nlohmann_json >=3.6.1
   run:
     - python
-    - numpy x.x
+    - pugixml
+    - thermofun 0.3.7
+    - nlohmann_json >=3.6.1
   run_constrained:                                            # [osx]
     - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx]
 

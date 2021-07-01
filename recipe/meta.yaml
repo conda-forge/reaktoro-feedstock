@@ -30,25 +30,27 @@ requirements:
     - clcache  # [win]
   host:
     - python
-    - thermofun 0.3.7
-    - pugixml
-    - nlohmann_json 3.6.1
-    - invoke
     - numpy
     - pip
+    - pandas
     - setuptools
     - wheel
-    - pybind11
     - tabulate
+    - pybind11
+    - pugixml
+    - thermofun 0.3.7
+    - nlohmann_json >=3.6.1
   run:
     - python
-    - pandas
-    - thermofun 0.3.6
-    - {{ pin_compatible('numpy') }}
-  run_constrained:   # [osx]
+    - numpy x.x
+  run_constrained:                                            # [osx]
     - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx]
 
 test:
+  requires:
+    - {{ compiler('cxx') }}
+    - cmake
+    - ninja
   files:
     - test/
   imports:

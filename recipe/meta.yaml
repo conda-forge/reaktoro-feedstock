@@ -1,24 +1,19 @@
-{% set version = "2.0.0" %}
+{% set version = "2.0.0-rc1" %}
 
 package:
   name: reaktoro
   version: {{ version }}
 
 source:
-  # url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
-  # sha256: e682f2846d5de9fa6ee9565e54762653a1c3ecb46e7932a46e1d4881b8b64cc4
+  url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
+  sha256: e682f2846d5de9fa6ee9565e54762653a1c3ecb46e7932a46e1d4881b8b64cc4
 
-#  Use the config below to use an archive from a branch to test conda-forge builds without creating GitHub releases
-  # url: https://github.com/allanleal/reaktoro/archive/{branch-name-here}.tar.gz
-  # sha256: 6f8eb83086f53d89f2144380728e1403fd6b45b903a673c6a086b3523170cf4a
-  git_url: https://github.com/allanleal/reaktoro.git
-  git_rev: v2.0-preview
-  # git_depth: 1
+  #  Use the config below to use a branch to test conda-forge builds without creating GitHub releases
+  # git_url: https://github.com/allanleal/reaktoro.git
+  # git_rev: v2.0-preview
 
 build:
-  number: 3
-  # skip: true  # [py2k or c_compiler == 'toolchain_c' or py < 39 or (win and vc<15)]
-  # skip: true  # [py < 39]
+  number: 0
 
 requirements:
   build:

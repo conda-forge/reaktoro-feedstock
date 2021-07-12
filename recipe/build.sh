@@ -1,14 +1,12 @@
 #!/bin/bash
+
 mkdir build
 cd build
-cmake -DREAKTORO_BUILD_ALL=ON \
-      -DREAKTORO_PYTHON_INSTALL_PREFIX=$PREFIX \
-      -REAKTORO_THIRDPARTY_COMMON_INSTALL_ARGS="-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON" \
-      -DCMAKE_BUILD_TYPE=Release \
-      -DCMAKE_INSTALL_PREFIX="$PREFIX" \
-      -DCMAKE_INSTALL_LIBDIR=lib \
-      -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON \
-      -DPYTHON_EXECUTABLE=$PYTHON \
-      ..
-make VERBOSE=1 -j${CPU_COUNT}
-make install
+
+# Configure the build of Reaktoro
+cmake -GNinja .. ${CMAKE_ARGS}  \
+    -DCMAKE_BUILD_TYPE=Release  \
+    -DPYTHON_EXECUTABLE=$PYTHON
+
+# Build and install Reaktoro in $PREFIX
+ninja install

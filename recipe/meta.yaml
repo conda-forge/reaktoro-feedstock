@@ -1,54 +1,73 @@
-{% set version = "1.2.3" %}
+{% set version = "2.0.0rc2" %}
 
 package:
   name: reaktoro
   version: {{ version }}
 
 source:
-  url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
-  sha256: e682f2846d5de9fa6ee9565e54762653a1c3ecb46e7932a46e1d4881b8b64cc4
+  # url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
+  # sha256: e682f2846d5de9fa6ee9565e54762653a1c3ecb46e7932a46e1d4881b8b64cc4
 
-#  Use the config below to use an archive from a branch to test conda-forge builds without creating GitHub releases
-#   url: https://github.com/allanleal/reaktoro/archive/{branch-name-here}.tar.gz 
-#   sha256: 7aa0c01a7b874d4f7d262f498cb0b15cfab12a230a1c7c88f68516a985948784
+  #  Use the config below to use a branch to test conda-forge builds without creating GitHub releases
+  git_url: https://github.com/reaktoro/reaktoro.git
+  git_rev: v2.0.0rc
 
 build:
   number: 0
-  skip: true  # [py2k or c_compiler == 'toolchain_c']
 
 requirements:
   build:
     - {{ compiler('cxx') }}
     - cmake
     - ninja
+    - catch2
+    - ccache   # [unix]
+    - clcache  # [win]
   host:
-    - python
-    - boost
-    - thermofun 0.3.7
-    - nlohmann_json 3.6.1
-    - invoke
+    - autodiff
+    - cpp-tabulate
+    - eigen4rkt
+    - nlohmann_json >=3.9.1
     - numpy
+    - optima
+    - phreeqc4rkt
     - pip
-    - setuptools
-    - wheel
+    - pugixml
     - pybind11
-    - tabulate
-  run:
-    - boost
+    - pybind11-abi
+    - pybind11-stubgen
+    - pytest
+    - pytest-regressions
+    - pytest-xdist
     - python
-    - pandas
-    - thermofun 0.3.6
-    - {{ pin_compatible('numpy') }}
-  run_constrained:   # [osx]
-    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx]
+    - setuptools
+    - thermofun 0.3.8
+    - yaml-cpp4rkt
+  run:
+    - autodiff
+    - eigen4rkt
+    - nlohmann_json >=3.9.1
+    - numpy
+    - optima
+    - phreeqc4rkt
+    - pugixml
+    - python
+    - thermofun 0.3.8
+    - yaml-cpp4rkt
 
 test:
+  requires:
+    - {{ compiler('cxx') }}
+    - cmake
+    - ninja
+  files:
+    - test/
   imports:
     - reaktoro
 
 about:
-  home: http://github.com/reaktoro/reaktoro
-  license: LGPL-2.1
+  home: https://github.com/reaktoro/reaktoro
+  license: LGPL-2.1-only
   license_family: LGPL
   license_file: LICENSE
   summary: A unified framework for modeling chemically reactive systems

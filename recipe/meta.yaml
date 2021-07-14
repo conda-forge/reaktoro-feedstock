@@ -1,4 +1,4 @@
-{% set version = "2.0.0rc1" %}
+{% set version = "2.0.0rc2" %}
 
 package:
   name: reaktoro
@@ -25,6 +25,7 @@ requirements:
     - clcache  # [win]
   host:
     - autodiff
+    - cpp-tabulate
     - eigen4rkt
     - nlohmann_json >=3.9.1
     - numpy
@@ -40,7 +41,7 @@ requirements:
     - pytest-xdist
     - python
     - setuptools
-    - thermofun 0.3.7
+    - thermofun 0.3.8
     - yaml-cpp4rkt
   run:
     - autodiff
@@ -51,7 +52,7 @@ requirements:
     - phreeqc4rkt
     - pugixml
     - python
-    - thermofun 0.3.7
+    - thermofun 0.3.8
     - yaml-cpp4rkt
 
 test:

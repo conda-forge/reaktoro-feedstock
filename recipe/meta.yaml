@@ -1,4 +1,4 @@
-{% set version = "2.0.0rc12" %}
+{% set version = "2.0.0rc13" %}
 
 package:
   name: reaktoro
@@ -9,8 +9,8 @@ source:
   # sha256: e682f2846d5de9fa6ee9565e54762653a1c3ecb46e7932a46e1d4881b8b64cc4
 
   #  Use the config below to use a branch to test conda-forge builds without creating GitHub releases.
-  git_url: https://github.com/allanleal/reaktoro.git
-  git_rev: main 
+  git_url: https://github.com/reaktoro/reaktoro.git
+  git_rev: main
 
 build:
   number: 0
@@ -71,12 +71,14 @@ about:
   license_family: LGPL
   license_file: LICENSE
   summary: A unified framework for modeling chemically reactive systems
+  
   description: |
     Reaktoro is a unified framework for modeling chemically reactive systems.
     It provides methods for chemical equilibrium and kinetic calculations
     for multiphase systems. Reaktoro is mainly developed in C++ for
     performance reasons. A Python interface is available for a more
     convenient and simpler use.
+    
   doc_url: https://reaktoro.org
   dev_url: https://github.com/reaktoro/reaktoro
 

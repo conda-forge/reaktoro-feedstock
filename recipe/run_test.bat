@@ -1,4 +1,7 @@
-@REM Build and execute C++ test application using Reaktoro
+@REM Execute the Python test application using Reaktoro
+python test/example.py
+
+@REM Build and execute the C++ test application using Reaktoro
 cd test/app
 mkdir build
 cd build

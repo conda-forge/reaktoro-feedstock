@@ -1,4 +1,4 @@
-{% set version = "2.0.0rc19" %}
+{% set version = "2.0.0rc20" %}
 
 package:
   name: reaktoro
@@ -24,7 +24,7 @@ requirements:
     - ccache   # [unix]
     - clcache  # [win]
   host:
-    - autodiff >=0.6.2
+    - autodiff >=0.6.7
     - cpp-tabulate
     - eigen4rkt
     - nlohmann_json >=3.9.1
@@ -44,7 +44,7 @@ requirements:
     - thermofun 0.3.8
     - yaml-cpp4rkt
   run:
-    - autodiff >=0.6.2
+    - autodiff >=0.6.7
     - eigen4rkt
     - nlohmann_json >=3.9.1
     - numpy
@@ -71,14 +71,14 @@ about:
   license_family: LGPL
   license_file: LICENSE
   summary: A unified framework for modeling chemically reactive systems
-  
+
   description: |
     Reaktoro is a unified framework for modeling chemically reactive systems.
     It provides methods for chemical equilibrium and kinetic calculations
     for multiphase systems. Reaktoro is mainly developed in C++ for
     performance reasons. A Python interface is available for a more
     convenient and simpler use.
-    
+
   doc_url: https://reaktoro.org
   dev_url: https://github.com/reaktoro/reaktoro
 

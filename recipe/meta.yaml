@@ -1,4 +1,4 @@
-{% set version = "2.0.0rc22" %}
+{% set version = "2.0.0rc23" %}
 
 package:
   name: reaktoro
@@ -20,7 +20,7 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
     - ninja
-    - catch2
+    - catch2 =2
     - ccache   # [unix]
     - clcache  # [win]
   host:

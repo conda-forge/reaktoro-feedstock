@@ -13,7 +13,7 @@ source:
   git_rev: main
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -29,7 +29,7 @@ requirements:
     - eigen4rkt
     - nlohmann_json >=3.9.1
     - numpy
-    - optima =0.2.8
+    - optima =0.2.9
     - phreeqc4rkt
     - pip
     - pugixml
@@ -48,7 +48,7 @@ requirements:
     - eigen4rkt
     - nlohmann_json >=3.9.1
     - numpy
-    - optima =0.2.8
+    - optima =0.2.9
     - phreeqc4rkt
     - pugixml
     - python

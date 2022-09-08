@@ -1,4 +1,4 @@
-{% set version = "2.0.0rc23" %}
+{% set version = "2.0.0rc24" %}
 
 package:
   name: reaktoro
@@ -29,7 +29,7 @@ requirements:
     - eigen4rkt
     - nlohmann_json >=3.9.1
     - numpy
-    - optima >=0.2.6
+    - optima =0.2.8
     - phreeqc4rkt
     - pip
     - pugixml
@@ -48,7 +48,7 @@ requirements:
     - eigen4rkt
     - nlohmann_json >=3.9.1
     - numpy
-    - optima >=0.2.6
+    - optima =0.2.8
     - phreeqc4rkt
     - pugixml
     - python

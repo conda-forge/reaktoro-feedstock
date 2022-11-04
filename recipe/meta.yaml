@@ -1,4 +1,4 @@
-{% set version = "2.0.0rc24" %}
+{% set version = "2.0.0rc25" %}
 
 package:
   name: reaktoro
@@ -13,7 +13,7 @@ source:
   git_rev: main
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -24,12 +24,12 @@ requirements:
     - ccache   # [unix]
     - clcache  # [win]
   host:
-    - autodiff >=0.6.8
+    - autodiff >=0.6.12
     - cpp-tabulate
     - eigen4rkt
     - nlohmann_json >=3.9.1
     - numpy
-    - optima =0.2.9
+    - optima >=0.2.11
     - phreeqc4rkt
     - pip
     - pugixml
@@ -44,11 +44,11 @@ requirements:
     - thermofun 0.3.8
     - yaml-cpp4rkt
   run:
-    - autodiff >=0.6.8
+    - autodiff >=0.6.12
     - eigen4rkt
     - nlohmann_json >=3.9.1
     - numpy
-    - optima =0.2.9
+    - optima =0.2.11
     - phreeqc4rkt
     - pugixml
     - python

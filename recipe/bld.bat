@@ -6,6 +6,7 @@ cmake -GNinja ..                              ^
     -DCMAKE_BUILD_TYPE=Release                ^
     -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX%   ^
     -DCMAKE_INCLUDE_PATH=%LIBRARY_INC%        ^
+    -DREAKTORO_BUILD_TESTS=OFF                ^
     -DREAKTORO_PYTHON_INSTALL_PREFIX=%PREFIX% ^
     -DPYTHON_EXECUTABLE=%PYTHON%
 

@@ -1,4 +1,4 @@
-{% set version = "2.0.0rc25" %}
+{% set version = "2.0.0rc26" %}
 
 package:
   name: reaktoro

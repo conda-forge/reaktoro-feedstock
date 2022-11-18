@@ -14,19 +14,17 @@ int main()
     GaseousPhase gaseousphase("CO2(g)");
     gaseousphase.setActivityModel(ActivityModelPengRobinson());
 
-    Phases phases(db);
-    phases.add(aqueousphase);
-    phases.add(gaseousphase);
-
-    ChemicalSystem system(phases);
+    ChemicalSystem system(db, aqueousphase, gaseousphase);
     ChemicalState state(system);
-    state.setTemperature(25.0, "celsius");
-    state.setPressure(1.0, "bar");
-    state.setSpeciesMass("H2O(aq)", 1.0, "kg");
-    state.setSpeciesAmount("CO2(g)", 10.0, "mol");
+    state.temperature(25.0, "celsius");
+    state.pressure(1.0, "bar");
+    state.set("H2O(aq)", 1.0, "kg");
+    state.set("CO2(g)", 10.0, "mol");
 
     EquilibriumSolver solver(system);
-    solver.solve(state);
+    auto res = solver.solve(state);
+
+    errorif(res.failed(), "Calculation did not succeed!");
 
     std::cout << "Finished calculation!" << std::endl;
 }

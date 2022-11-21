@@ -16,7 +16,9 @@ print("=== INITIAL STATE ===")
 print(state)
 
 solver = EquilibriumSolver(system)
-solver.solve(state)  # equilibrate the `state` object!
+res = solver.solve(state)  # equilibrate the `state` object!
+
+assert res.succeeded(), "Calculation did not succeed!"
 
 print("=== FINAL STATE ===")
 print(state)

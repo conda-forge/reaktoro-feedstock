@@ -1,4 +1,4 @@
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: reaktoro
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
-  sha256: 9c631dff38f0004041b1c1b909411767ac3201cea6d75ab1acbc7ea95c9b3591
+  sha256: 89337d17551abeb1d4986a22a03e1e47d7501026a0c412632f49b40ccb4e7344
 
   #  Use the config below to use a branch to test conda-forge builds without creating GitHub releases.
   # git_url: https://github.com/reaktoro/reaktoro.git
@@ -30,7 +30,7 @@ requirements:
     - eigen4rkt
     - nlohmann_json >=3.9.1
     - numpy
-    - optima >=0.2.13
+    - optima >=0.3.0
     - phreeqc4rkt
     - pip
     - pybind11
@@ -49,7 +49,7 @@ requirements:
     - autodiff >=0.6.12
     - eigen4rkt
     - numpy
-    - optima >=0.2.13
+    - optima >=0.3.0
     - phreeqc4rkt
     - python
     - reaktplot >=0.3.1

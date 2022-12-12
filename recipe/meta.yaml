@@ -13,7 +13,7 @@ source:
   # git_rev: main
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -56,6 +56,8 @@ requirements:
     - thermofun 0.3.8
     - tsl_ordered_map
     - yaml-cpp4rkt
+    - ipykernel                # needed if using Jupyter Notebooks in Visual Studio Code
+    - nbformat                 # needed if using plotly in Jupyter Notebooks in Visual Studio Code
 
 test:
   requires:

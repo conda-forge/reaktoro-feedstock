@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
-  sha256: 53dc0136c33e3e87197dc49c49833d71aadd16108452123f4baa055ee1442ba6
+  sha256: 715584fd9768e3f31e889466a3b812e27cf12abdc3a3f03bef41fada45430837
 
   #  Use the config below to use a branch to test conda-forge builds without creating GitHub releases.
   # git_url: https://github.com/reaktoro/reaktoro.git

@@ -1,11 +1,11 @@
-About reaktoro
-==============
+About reaktoro-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/reaktoro-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/reaktoro/reaktoro
 
 Package license: LGPL-2.1-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/reaktoro-feedstock/blob/main/LICENSE.txt)
 
 Summary: A unified framework for modeling chemically reactive systems
 

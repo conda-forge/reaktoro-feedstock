@@ -25,7 +25,7 @@ requirements:
     - lld      # [unix]
     - ninja
   host:
-    - autodiff >=0.6.12
+    - autodiff >=1.0.0
     - cpp-tabulate
     - eigen4rkt
     - nlohmann_json >=3.9.1
@@ -46,7 +46,7 @@ requirements:
     - thermofun 0.3.8
     - yaml-cpp4rkt
   run:
-    - autodiff >=0.6.12
+    - autodiff >=1.0.0
     - eigen4rkt
     - numpy
     - optima >=0.3.1

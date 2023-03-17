@@ -40,7 +40,7 @@ requirements:
     - pytest-regressions
     - pytest-xdist
     - python
-    - reaktplot >=0.4.0
+    - reaktplot >=0.4.1
     - tsl_ordered_map
     - setuptools
     - thermofun 0.3.8
@@ -52,7 +52,7 @@ requirements:
     - optima >=0.3.1
     - phreeqc4rkt
     - python
-    - reaktplot >=0.4.0
+    - reaktplot >=0.4.1
     - thermofun 0.3.8
     - tsl_ordered_map
     - yaml-cpp4rkt

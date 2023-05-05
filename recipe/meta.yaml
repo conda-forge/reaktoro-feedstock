@@ -1,4 +1,4 @@
-{% set version = "2.6.0" %}
+{% set version = "2.6.1" %}
 
 package:
   name: reaktoro
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
-  sha256: 30c30acbf9ed6a5d2a5d36fd3ee88a409b302ba6d32079de6e5cd158209936e4
+  sha256: a5426e7e2945536cc6b910055711e67632361a79045298fc4d93085935e50095
 
   #  Use the config below to use a branch to test conda-forge builds without creating GitHub releases.
   # git_url: https://github.com/reaktoro/reaktoro.git

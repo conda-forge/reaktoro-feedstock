@@ -1,7 +1,6 @@
 provider:
   win: azure
 conda_forge_output_validation: true
-
 azure:
   settings_win:
     pool:
@@ -11,3 +10,8 @@ github:
   tooling_branch_name: main
 conda_build:
   pkg_format: '2'
+build_platform:
+  osx_arm64: osx_64
+  linux_ppc64le: linux_64
+  linux_aarch64: linux_64
+test: native_and_emulated

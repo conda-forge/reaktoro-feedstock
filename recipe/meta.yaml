@@ -24,6 +24,10 @@ requirements:
     - cmake
     - lld      # [unix]
     - ninja
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - numpy                                  # [build_platform != target_platform]
+    - pybind11                               # [build_platform != target_platform]
   host:
     - autodiff >=1.0.3
     - cpp-tabulate
@@ -40,7 +44,7 @@ requirements:
     - pytest-regressions
     - pytest-xdist
     - python
-    - reaktplot >=0.4.1
+    - reaktplot >=0.4.1  # [not aarch64 and not ppc64le]
     - tsl_ordered_map
     - setuptools
     - thermofun 0.4.3
@@ -52,7 +56,7 @@ requirements:
     - optima >=0.3.3
     - phreeqc4rkt
     - python
-    - reaktplot >=0.4.1
+    - reaktplot >=0.4.1  # [not aarch64 and not ppc64le]
     - thermofun 0.4.3
     - tsl_ordered_map
     - yaml-cpp4rkt

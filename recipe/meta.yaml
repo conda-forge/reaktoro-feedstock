@@ -40,9 +40,6 @@ requirements:
     - pybind11
     - pybind11-abi
     - pybind11-stubgen
-    - pytest
-    - pytest-regressions
-    - pytest-xdist
     - python
     - reaktplot >=0.4.1  # [not aarch64 and not ppc64le]
     - tsl_ordered_map

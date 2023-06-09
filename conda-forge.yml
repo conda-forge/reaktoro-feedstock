@@ -6,6 +6,6 @@ conda_build:
   pkg_format: '2'
 build_platform:
   osx_arm64: osx_64
-  linux_ppc64le: linux_64
-  linux_aarch64: linux_64
+  # linux_ppc64le: linux_64  # Disabling this for now as we need to make this available in autodiff first
+  # linux_aarch64: linux_64  # Disabling this for now as we need to make this available in autodiff first
 test: native_and_emulated

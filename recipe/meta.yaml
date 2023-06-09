@@ -15,15 +15,15 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - catch2 =2
-    - ccache                             # [unix]
-    - clcache                            # [win]
+    - ccache                              # [unix]
+    - clcache                             # [win]
     - cmake
-    - lld                                # [unix]
+    - lld                                 # [unix]
     - ninja
-    - python                             # [build_platform != target_platform]
-    - cross-python_{{ target_platform }} # [build_platform != target_platform]
-    - numpy                              # [build_platform != target_platform]
-    - pybind11                           # [build_platform != target_platform]
+    - python                              # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}  # [build_platform != target_platform]
+    - numpy                               # [build_platform != target_platform]
+    - pybind11                            # [build_platform != target_platform]
   host:
     - autodiff >=1.0.3
     - cpp-tabulate
@@ -37,7 +37,7 @@ requirements:
     - pybind11-abi
     - pybind11-stubgen
     - python
-    - reaktplot >=0.4.1                  # [not aarch64 and not ppc64le]
+    - reaktplot >=0.4.1                   # [not aarch64 and not ppc64le]
     - tsl_ordered_map
     - setuptools
     - thermofun 0.4.4
@@ -49,12 +49,12 @@ requirements:
     - optima >=0.3.3
     - phreeqc4rkt
     - python
-    - reaktplot >=0.4.1                  # [not aarch64 and not ppc64le]
+    - reaktplot >=0.4.1                   # [not aarch64 and not ppc64le]
     - thermofun 0.4.4
     - tsl_ordered_map
     - yaml-cpp4rkt
-    - ipykernel                          # needed if using Jupyter Notebooks in Visual Studio Code
-    - nbformat                           # needed if using plotly in Jupyter Notebooks in Visual Studio Code
+    - ipykernel                           # needed if using Jupyter Notebooks in Visual Studio Code
+    - nbformat                            # needed if using plotly in Jupyter Notebooks in Visual Studio Code
 
 test:
   requires:

@@ -10,7 +10,6 @@ source:
 
 build:
   number: 1
-  skip:  # [unix and win and osx]
 
 requirements:
   build:
@@ -25,7 +24,6 @@ requirements:
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
     - numpy                               # [build_platform != target_platform]
     - pybind11                            # [build_platform != target_platform]
-    - pybind11-stubgen                    # [build_platform != target_platform]
   host:
     - autodiff >=1.0.3
     - cpp-tabulate
@@ -37,7 +35,7 @@ requirements:
     - pip
     - pybind11
     - pybind11-abi
-    - pybind11-stubgen
+    - pybind11-stubgen                    # [not arm64]
     - python
     - reaktplot >=0.4.1                   # [not aarch64 and not ppc64le]
     - tsl_ordered_map

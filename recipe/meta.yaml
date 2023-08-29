@@ -9,7 +9,7 @@ source:
   sha256: 6c583ca391eea7b7e1bce54eae880e2f9c25cd7fd0074a4b2b31719a3e9ce29d
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -40,7 +40,7 @@ requirements:
     - reaktplot >=0.4.1                   # [not aarch64 and not ppc64le]
     - tsl_ordered_map
     - setuptools
-    - thermofun 0.4.4
+    - thermofun >=0.4.4=2
     - yaml-cpp4rkt
   run:
     - autodiff >=1.0.3

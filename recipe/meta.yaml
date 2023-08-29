@@ -40,7 +40,7 @@ requirements:
     - reaktplot >=0.4.1                   # [not aarch64 and not ppc64le]
     - tsl_ordered_map
     - setuptools
-    - thermofun >=0.4.4=2
+    - thermofun =0.4.4=2
     - yaml-cpp4rkt
   run:
     - autodiff >=1.0.3
@@ -50,7 +50,7 @@ requirements:
     - phreeqc4rkt
     - python
     - reaktplot >=0.4.1                   # [not aarch64 and not ppc64le]
-    - thermofun 0.4.4
+    - thermofun =0.4.4=2
     - tsl_ordered_map
     - yaml-cpp4rkt
     - ipykernel                           # needed if using Jupyter Notebooks in Visual Studio Code

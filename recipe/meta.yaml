@@ -1,4 +1,4 @@
-{% set version = "2.8.0" %}
+{% set version = "2.8.1" %}
 
 package:
   name: reaktoro
@@ -30,7 +30,7 @@ requirements:
     - eigen
     - nlohmann_json >=3.9.1
     - numpy
-    - optima >=0.3.3
+    - optima >=0.4.0
     - phreeqc4rkt
     - pip
     - pybind11
@@ -41,16 +41,18 @@ requirements:
     - tsl_ordered_map
     - setuptools
     - thermofun >=0.4.5
+    - spdlog >=1.12.0                     # TEMPORARY (30.08.23) Add this to ensure for now that users do not get error associated to missing libspdlog.so.1.11 due to previous installation of chemicalfun <=0.1.9_2
     - yaml-cpp4rkt
   run:
     - autodiff >=1.0.3
     - eigen
     - numpy
-    - optima >=0.3.3
+    - optima >=0.4.0
     - phreeqc4rkt
     - python
     - reaktplot >=0.4.1                   # [not aarch64 and not ppc64le]
     - thermofun >=0.4.5
+    - spdlog >=1.12.0                     # TEMPORARY (30.08.23) Add this to ensure for now that users do not get error associated to missing libspdlog.so.1.11 due to previous installation of chemicalfun <=0.1.9_2
     - tsl_ordered_map
     - yaml-cpp4rkt
     - ipykernel                           # needed if using Jupyter Notebooks in Visual Studio Code

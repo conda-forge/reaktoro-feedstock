@@ -35,7 +35,7 @@ requirements:
     - pip
     - pybind11
     - pybind11-abi
-    - pybind11-stubgen                    # [not arm64]
+    - pybind11-stubgen =0.15.1            # [not arm64]
     - python
     - reaktplot >=0.4.1                   # [not aarch64 and not ppc64le]
     - tsl_ordered_map

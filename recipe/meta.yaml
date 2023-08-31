@@ -9,7 +9,7 @@ source:
   sha256: 6c583ca391eea7b7e1bce54eae880e2f9c25cd7fd0074a4b2b31719a3e9ce29d
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -30,7 +30,7 @@ requirements:
     - eigen
     - nlohmann_json >=3.9.1
     - numpy
-    - optima >=0.3.3
+    - optima =0.3.3
     - phreeqc4rkt
     - pip
     - pybind11
@@ -47,7 +47,7 @@ requirements:
     - autodiff >=1.0.3
     - eigen
     - numpy
-    - optima >=0.3.3
+    - optima =0.3.3
     - phreeqc4rkt
     - python
     - reaktplot >=0.4.1                   # [not aarch64 and not ppc64le]

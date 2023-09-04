@@ -6,9 +6,11 @@ cd build
 # Configure the build of Reaktoro
 cmake -GNinja .. ${CMAKE_ARGS}  \
     -DCMAKE_BUILD_TYPE=Release  \
-    -DREAKTORO_BUILD_TESTS=OFF  \
     -DPYTHON_EXECUTABLE=$PYTHON \
-    -DCMAKE_CXX_FLAGS="-fuse-ld=lld"
+    -DCMAKE_CXX_FLAGS="$(if [ $(uname) == 'Linux' ]; then echo '-fuse-ld=lld'; else echo ''; fi)"
 
-# Build and install Reaktoro in $PREFIX
+# Build and test Reaktoro
+ninja tests
+
+# Install Reaktoro in $PREFIX
 ninja install

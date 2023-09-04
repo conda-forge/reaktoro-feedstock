@@ -7,8 +7,6 @@ package:
 source:
   git_url: https://github.com/allanleal/reaktoro.git
   git_rev: fixes-for-v2.8.1
-  git_depth: 1
-
   # url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
   # sha256: 774a5534b2ad2c9c3bab7c70a6687ed6d11ae4cbdf2e388b2ab2a70c3ef07ebf
 

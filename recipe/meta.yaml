@@ -37,7 +37,7 @@ requirements:
     - pip
     - pybind11
     - pybind11-abi
-    - pybind11-stubgen =2.0.2            # [not arm64]
+    - pybind11-stubgen =2.0.2             # [not arm64]
     - pytest
     - python
     - reaktplot >=0.4.1                   # [not aarch64 and not ppc64le]

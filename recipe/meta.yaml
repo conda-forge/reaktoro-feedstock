@@ -1,4 +1,4 @@
-{% set version = "2.8.0" %}
+{% set version = "2.8.1" %}
 
 package:
   name: reaktoro
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
-  sha256: 6c583ca391eea7b7e1bce54eae880e2f9c25cd7fd0074a4b2b31719a3e9ce29d
+  sha256: 774a5534b2ad2c9c3bab7c70a6687ed6d11ae4cbdf2e388b2ab2a70c3ef07ebf
 
 build:
   number: 2
@@ -15,10 +15,9 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - catch2 =2
-    - ccache                              # [unix]
-    - clcache                             # [win]
+    - ccache
     - cmake
-    - lld                                 # [unix]
+    - lld                                 # [linux]
     - ninja
     - python                              # [build_platform != target_platform]
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
@@ -30,7 +29,7 @@ requirements:
     - eigen
     - nlohmann_json >=3.9.1
     - numpy
-    - optima =0.3.3
+    - optima =0.4.0
     - phreeqc4rkt
     - pip
     - pybind11
@@ -40,19 +39,17 @@ requirements:
     - reaktplot >=0.4.1                   # [not aarch64 and not ppc64le]
     - tsl_ordered_map
     - setuptools
-    - thermofun >=0.4.4
-    - spdlog >=1.12.0  # TODO: Remove this after ThermoFun is pinned to >=0.4.5
+    - thermofun =0.4.5
     - yaml-cpp4rkt
   run:
     - autodiff >=1.0.3
     - eigen
     - numpy
-    - optima =0.3.3
+    - optima =0.4.0
     - phreeqc4rkt
     - python
     - reaktplot >=0.4.1                   # [not aarch64 and not ppc64le]
-    - thermofun >=0.4.4
-    - spdlog >=1.12.0  # TODO: Remove this after ThermoFun is pinned to >=0.4.5
+    - thermofun =0.4.5
     - tsl_ordered_map
     - yaml-cpp4rkt
     - ipykernel                           # needed if using Jupyter Notebooks in Visual Studio Code

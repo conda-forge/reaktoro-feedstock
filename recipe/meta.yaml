@@ -9,7 +9,7 @@ source:
   sha256: 6c583ca391eea7b7e1bce54eae880e2f9c25cd7fd0074a4b2b31719a3e9ce29d
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
@@ -41,7 +41,7 @@ requirements:
     - tsl_ordered_map
     - setuptools
     - thermofun >=0.4.4
-    - spdlog >=1.12.0  # TODO: Remove this after ThermoFun is pinned to >=0.4.5
+    - spdlog =1.11.0  # TODO: Remove this after ThermoFun is pinned to >=0.4.5
     - yaml-cpp4rkt
   run:
     - autodiff >=1.0.3
@@ -52,7 +52,7 @@ requirements:
     - python
     - reaktplot >=0.4.1                   # [not aarch64 and not ppc64le]
     - thermofun >=0.4.4
-    - spdlog >=1.12.0  # TODO: Remove this after ThermoFun is pinned to >=0.4.5
+    - spdlog =1.11.0  # TODO: Remove this after ThermoFun is pinned to >=0.4.5
     - tsl_ordered_map
     - yaml-cpp4rkt
     - ipykernel                           # needed if using Jupyter Notebooks in Visual Studio Code

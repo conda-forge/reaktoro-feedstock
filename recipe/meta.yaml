@@ -42,7 +42,8 @@ requirements:
     - tsl_ordered_map
     - setuptools
     - thermofun =0.4.5
-    - spdlog =1.12.0 
+    - spdlog >=1.12                       # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
+    - fmt >=10.1                          # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
     - yaml-cpp4rkt
   run:
     - autodiff >=1.0.3
@@ -53,7 +54,8 @@ requirements:
     - python
     - reaktplot >=0.4.1                   # [not aarch64 and not ppc64le]
     - thermofun =0.4.5
-    - spdlog =1.12.0
+    - spdlog >=1.12                       # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
+    - fmt >=10.1                          # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
     - tsl_ordered_map
     - yaml-cpp4rkt
     - ipykernel                           # needed if using Jupyter Notebooks in Visual Studio Code

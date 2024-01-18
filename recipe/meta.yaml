@@ -1,4 +1,4 @@
-{% set version = "2.10.0" %}
+{% set version = "2.11.0" %}
 
 package:
   name: reaktoro
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
-  sha256: bf114be1c75c2254fcd66336f81c8d8f02b3f38d450fb74e27ce1f0837dd3afd
+  sha256: 5d92b30ceabcea1fda3cd34ce5bb12b70105dbbeb3b9c2048471dec9c8aa0d7b
 
 build:
   number: 0
@@ -30,7 +30,7 @@ requirements:
     - eigen
     - nlohmann_json >=3.9.1
     - numpy
-    - optima =0.4.0
+    - optima =0.5
     - phreeqc4rkt
     - pip
     - pybind11
@@ -49,7 +49,7 @@ requirements:
     - autodiff >=1.0.3
     - eigen
     - numpy
-    - optima =0.4.0
+    - optima =0.5
     - phreeqc4rkt
     - python
     - reaktplot >=0.4.1                   # [not aarch64 and not ppc64le]

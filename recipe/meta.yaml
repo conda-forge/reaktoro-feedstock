@@ -9,7 +9,7 @@ source:
   sha256: 5d92b30ceabcea1fda3cd34ce5bb12b70105dbbeb3b9c2048471dec9c8aa0d7b
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -25,10 +25,10 @@ requirements:
     - numpy                               # [build_platform != target_platform]
     - pybind11                            # [build_platform != target_platform]
   host:
-    - autodiff >=1.0.3
+    - autodiff =1.0.3
     - cpp-tabulate
     - eigen
-    - nlohmann_json >=3.9.1
+    - nlohmann_json =3.9.1
     - numpy
     - optima =0.5
     - phreeqc4rkt
@@ -38,24 +38,24 @@ requirements:
     - pybind11-stubgen =2.0.2             # [not arm64]
     - pytest
     - python
-    - reaktplot >=0.4.1                   # [not aarch64 and not ppc64le]
+    - reaktplot =0.4.1                   # [not aarch64 and not ppc64le]
     - tsl_ordered_map
     - setuptools
     - thermofun =0.4.5
-    - spdlog >=1.12                       # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
-    - fmt >=10.1                          # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
+    - spdlog =1.12                       # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
+    - fmt =10.1                          # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
     - yaml-cpp4rkt
   run:
-    - autodiff >=1.0.3
+    - autodiff =1.0.3
     - eigen
     - numpy
     - optima =0.5
     - phreeqc4rkt
     - python
-    - reaktplot >=0.4.1                   # [not aarch64 and not ppc64le]
+    - reaktplot =0.4.1                   # [not aarch64 and not ppc64le]
     - thermofun =0.4.5
-    - spdlog >=1.12                       # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
-    - fmt >=10.1                          # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
+    - spdlog =1.12                       # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
+    - fmt =10.1                          # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
     - tsl_ordered_map
     - yaml-cpp4rkt
     - ipykernel                           # needed if using Jupyter Notebooks in Visual Studio Code

@@ -9,11 +9,12 @@ source:
   sha256: ad3a1549a4c63790e1b483db914c3ef4474bf215f9f332a03f1a0a0fb342b747
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - catch2 =2
     - ccache
     - cmake

@@ -1,4 +1,4 @@
-{% set version = "2.12.5" %}
+{% set version = "2.13.0" %}
 
 package:
   name: reaktoro
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
-  sha256: 47062f5c45ec6c108e8dc2f305590a00918d0f7602622ad1bb64c09706d0f85e
+  sha256: 2a5958caa54ccc2d9d5e2ab1957a0bbe028597fdfb3291eb6056576c6b99bb45
 
 build:
   number: 0
@@ -29,9 +29,9 @@ requirements:
     - autodiff =1.1.2
     - cpp-tabulate
     - eigen
-    - nlohmann_json =3.9.1
+    - nlohmann_json =3.11.3
     - numpy
-    - optima =0.5
+    - optima =0.6.0
     - phreeqc4rkt
     - pip
     - pybind11
@@ -45,12 +45,12 @@ requirements:
     - thermofun =0.4.5
     - spdlog =1.12                       # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
     - fmt =10.1                          # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
-    - yaml-cpp4rkt
+    - yaml-cpp =0.8.0
   run:
     - autodiff =1.1.2
     - eigen
     - numpy
-    - optima =0.5
+    - optima =0.6.0
     - phreeqc4rkt
     - python
     - reaktplot =0.4.1                   # [not aarch64 and not ppc64le]
@@ -58,7 +58,7 @@ requirements:
     - spdlog =1.12                       # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
     - fmt =10.1                          # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
     - tsl_ordered_map
-    - yaml-cpp4rkt
+    - yaml-cpp =0.8.0
     - ipykernel                           # needed if using Jupyter Notebooks in Visual Studio Code
     - nbformat                            # needed if using plotly in Jupyter Notebooks in Visual Studio Code
 
@@ -92,6 +92,3 @@ about:
 extra:
   recipe-maintainers:
     - allanleal
-    - tadeu
-    - nicoddemus
-    - mtsveta

@@ -279,7 +279,4 @@ Feedstock Maintainers
 =====================
 
 * [@allanleal](https://github.com/allanleal/)
-* [@mtsveta](https://github.com/mtsveta/)
-* [@nicoddemus](https://github.com/nicoddemus/)
-* [@tadeu](https://github.com/tadeu/)
 

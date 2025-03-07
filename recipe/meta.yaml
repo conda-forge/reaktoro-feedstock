@@ -1,4 +1,4 @@
-{% set version = "2.12.5" %}
+{% set version = "2.13.0" %}
 
 package:
   name: reaktoro
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/reaktoro/reaktoro/archive/v{{ version }}.tar.gz
-  sha256: 47062f5c45ec6c108e8dc2f305590a00918d0f7602622ad1bb64c09706d0f85e
+  sha256: 2a5958caa54ccc2d9d5e2ab1957a0bbe028597fdfb3291eb6056576c6b99bb45
 
 build:
   number: 0

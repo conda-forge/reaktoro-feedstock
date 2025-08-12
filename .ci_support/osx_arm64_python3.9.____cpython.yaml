@@ -14,6 +14,8 @@ cxx_compiler:
 - clangxx
 cxx_compiler_version:
 - '19'
+fmt:
+- '11.2'
 macos_machine:
 - arm64-apple-darwin20.0.0
 numpy:
@@ -26,5 +28,7 @@ pybind11_abi:
 - '4'
 python:
 - 3.9.* *_cpython
+spdlog:
+- '1.15'
 target_platform:
 - osx-arm64

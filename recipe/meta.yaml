@@ -9,7 +9,7 @@ source:
   sha256: 2a5958caa54ccc2d9d5e2ab1957a0bbe028597fdfb3291eb6056576c6b99bb45
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -42,9 +42,9 @@ requirements:
     - reaktplot =0.4.1                   # [not aarch64 and not ppc64le]
     - tsl_ordered_map
     - setuptools
-    - thermofun =0.4.5
-    - spdlog =1.12                       # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
-    - fmt =10.1                          # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
+    - thermofun =0.6.1
+    - spdlog =>1.12                       # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
+    - fmt =>10.1                          # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
     - yaml-cpp =0.8.0
   run:
     - autodiff =1.1.2
@@ -54,9 +54,9 @@ requirements:
     - phreeqc4rkt
     - python
     - reaktplot =0.4.1                   # [not aarch64 and not ppc64le]
-    - thermofun =0.4.5
-    - spdlog =1.12                       # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
-    - fmt =10.1                          # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
+    - thermofun =0.6.1
+    - spdlog =>1.12                       # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
+    - fmt =>10.1                          # needed when upgrading from reaktoro v2.7 to v2.8+ - otherwise, runtime error
     - tsl_ordered_map
     - yaml-cpp =0.8.0
     - ipykernel                           # needed if using Jupyter Notebooks in Visual Studio Code
